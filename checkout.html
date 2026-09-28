@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — SFASELIN | sfaselin.shop</title>
+<meta name="description" content="Secure checkout at sfaselin.shop — cards, PayPal and Apple Pay accepted. Free US shipping over $35.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232a160d'/%3E%3Ctext x='16' y='21' font-size='15' text-anchor='middle' fill='%23c8a877' font-family='Georgia'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body data-page="checkout">
+<header class="site-header" id="site-header"></header>
+<nav class="mobile-nav" id="mobile-nav"></nav>
+<div id="cart-root"></div>
+<div id="search-root"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / <a href="cart.html">Bag</a> / Checkout</div>
+      <h1>Secure <em>checkout</em></h1>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap" id="checkout-root">
+      <form class="checkout" id="co-form" novalidate>
+        <div>
+          <fieldset class="co-fieldset">
+            <legend><i>01</i> Contact</legend>
+            <div class="field-grid">
+              <div class="field">
+                <label for="f-name">Full Name</label>
+                <input id="f-name" type="text" autocomplete="name" placeholder="Emily Carter">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone Number</label>
+                <input id="f-phone" type="tel" autocomplete="tel" placeholder="(212) 555-0147">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field field--full">
+                <label for="f-email">Email Address</label>
+                <input id="f-email" type="email" autocomplete="email" placeholder="you@email.com">
+                <span class="err-msg"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="co-fieldset">
+            <legend><i>02</i> Shipping Address</legend>
+            <div class="field-grid">
+              <div class="field field--full">
+                <label for="f-addr">Street Address</label>
+                <input id="f-addr" type="text" autocomplete="street-address" placeholder="Apt, building, street">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field">
+                <label for="f-city">City</label>
+                <input id="f-city" type="text" autocomplete="address-level2" placeholder="New York">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field">
+                <label for="f-state">State</label>
+                <select id="f-state">
+                  <option value="">Select state…</option>
+                  <option>Alabama</option><option>Alaska</option><option>Arizona</option>
+                  <option>Arkansas</option><option>California</option><option>Colorado</option>
+                  <option>Connecticut</option><option>Delaware</option><option>District of Columbia</option>
+                  <option>Florida</option><option>Georgia</option><option>Hawaii</option>
+                  <option>Idaho</option><option>Illinois</option><option>Indiana</option>
+                  <option>Iowa</option><option>Kansas</option><option>Kentucky</option>
+                  <option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                  <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option>
+                  <option>Mississippi</option><option>Missouri</option><option>Montana</option>
+                  <option>Nebraska</option><option>Nevada</option><option>New Hampshire</option>
+                  <option>New Jersey</option><option>New Mexico</option><option>New York</option>
+                  <option>North Carolina</option><option>North Dakota</option><option>Ohio</option>
+                  <option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option>
+                  <option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option>
+                  <option>Tennessee</option><option>Texas</option><option>Utah</option>
+                  <option>Vermont</option><option>Virginia</option><option>Washington</option>
+                  <option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+                </select>
+                <span class="err-msg"></span>
+              </div>
+              <div class="field">
+                <label for="f-pin">ZIP Code</label>
+                <input id="f-pin" type="text" inputmode="numeric" maxlength="10" autocomplete="postal-code" placeholder="10012">
+                <span class="err-msg"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="co-fieldset">
+            <legend><i>03</i> Payment</legend>
+            <label class="pay-opt is-selected">
+              <input type="radio" name="pay" value="card" checked>
+              <div style="flex:1"><b>Credit / Debit Card</b><small>Visa, Mastercard, Amex & Discover accepted.</small>
+                <div class="pay-extra">
+                  <div class="field-grid">
+                    <div class="field field--full">
+                      <label for="f-cardno">Card Number</label>
+                      <input id="f-cardno" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456">
+                      <span class="err-msg"></span>
+                    </div>
+                    <div class="field">
+                      <label for="f-exp">Expiry</label>
+                      <input id="f-exp" type="text" placeholder="MM/YY" maxlength="5">
+                      <span class="err-msg"></span>
+                    </div>
+                    <div class="field">
+                      <label for="f-cvv">CVV</label>
+                      <input id="f-cvv" type="password" inputmode="numeric" placeholder="•••" maxlength="4">
+                      <span class="err-msg"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label class="pay-opt">
+              <input type="radio" name="pay" value="paypal">
+              <div><b>PayPal</b><small>You'll be redirected to PayPal to complete your purchase securely.</small></div>
+            </label>
+            <label class="pay-opt">
+              <input type="radio" name="pay" value="applepay">
+              <div><b>Apple Pay</b><small>One-touch payment on supported Apple devices.</small></div>
+            </label>
+          </fieldset>
+
+          <button class="btn btn--full" type="submit" id="place-order" style="margin-top:.5rem">Place Order <span class="arr">→</span></button>
+          <p style="font-size:12px;color:var(--brown-3);margin-top:.9rem">
+            By placing this order you agree to our
+            <a class="link-line" href="terms-conditions.html">Terms & Conditions</a> and
+            <a class="link-line" href="privacy-policy.html">Privacy Policy</a>.
+          </p>
+        </div>
+
+        <aside class="summary" id="co-summary"></aside>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

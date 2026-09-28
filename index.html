@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFASELIN — Imitation Jewelry, Honestly Priced | sfaselin.shop</title>
+<meta name="description" content="Sfaselin.shop — hand-finished imitation jewelry for women. Kundan chokers, pearl earrings, gold-plated bangles & more. Free US shipping over $35, 30-day easy returns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232a160d'/%3E%3Ctext x='16' y='21' font-size='15' text-anchor='middle' fill='%23c8a877' font-family='Georgia'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body data-page="home">
+<header class="site-header" id="site-header"></header>
+<nav class="mobile-nav" id="mobile-nav"></nav>
+<div id="cart-root"></div>
+<div id="search-root"></div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="spine" aria-hidden="true">
+      <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span>
+      <span>07</span><span>08</span><span>09</span><span>10</span><span>11</span><span>12</span>
+    </div>
+    <div class="hero__copy">
+      <div class="micro micro--gold">Imitation Jewelry · Designed in New York</div>
+      <h1 class="hero__title">Wear the <em>glow</em>,<br>not the price tag.</h1>
+      <p class="hero__sub">Kundan, pearls and gold-plated pieces that look like heirlooms and
+        cost like lunch. Anti-tarnish promise on every single piece.</p>
+      <div class="hero__ctas">
+        <a class="btn" href="shop.html">Shop the Collection <span class="arr">→</span></a>
+        <a class="btn btn--ghost" href="#bestsellers">Bestsellers</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="assets/img/hero.jpg" alt="Model wearing layered gold-tone necklace, hoops and bangles from Sfaselin" fetchpriority="high">
+    </div>
+    <div class="hero__scroll">Scroll</div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split-head reveal">
+        <h2>Shop by <em>category</em></h2>
+        <span class="micro">06 collections — one glow</span>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </div>
+  </section>
+
+  <!-- FEATURED CAROUSEL -->
+  <section class="section section--cream2">
+    <div class="wrap">
+      <div class="split-head reveal">
+        <h2>The <em>featured</em> edit</h2>
+        <span class="micro">Drag or use the arrows</span>
+      </div>
+      <div class="carousel">
+        <div class="carousel__nav">
+          <button class="carousel__btn carousel__btn--prev" id="feat-prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24"><path d="M21 12H4M10 5l-7 7 7 7"/></svg></button>
+          <button class="carousel__btn carousel__btn--next" id="feat-next" aria-label="Next">
+            <svg viewBox="0 0 24 24"><path d="M3 12h17M14 5l7 7-7 7"/></svg></button>
+        </div>
+        <div class="carousel__track" id="featured-track"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL SPLIT -->
+  <section class="section--tight">
+    <div class="split">
+      <div class="split__media reveal"><img src="assets/img/editorial.jpg" alt="Flat-lay of Sfaselin gold-plated jewelry on cream silk" loading="lazy"></div>
+      <div class="split__copy">
+        <span class="micro micro--gold">Why imitation, done well</span>
+        <h2>Precious is a <em>look</em>,<br>not a metal.</h2>
+        <p>Every Sfaselin piece starts as brass or copper alloy, hand-finished by our artisan partners,
+          then micro-plated in gold or silver tone and sealed with an anti-tarnish coat. Kundan stones
+          are set by hand; pearls are matched by eye.</p>
+        <p>You get jewelry that photographs like fine gold, wears light all day, and survives
+          weddings, monsoons and Monday meetings — at roughly one-tenth of the price.</p>
+        <a class="link-line" href="about.html">Read our story</a>
+        <div class="stat-row">
+          <div class="stat"><b>40k+</b><span>Orders shipped</span></div>
+          <div class="stat"><b>4.8★</b><span>Average rating</span></div>
+          <div class="stat"><b>6 mo</b><span>Anti-tarnish promise</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESTSELLERS -->
+  <section class="section" id="bestsellers">
+    <div class="wrap">
+      <div class="split-head reveal">
+        <h2>Bestsellers</h2>
+        <a class="link-line" href="shop.html">View all 13 pieces</a>
+      </div>
+      <div class="product-grid product-grid--4" id="best-grid"></div>
+    </div>
+  </section>
+
+  <!-- CRAFT / DARK -->
+  <section class="section section--dark">
+    <div class="split">
+      <div class="split__copy">
+        <span class="micro" style="color:var(--gold-soft)">The making</span>
+        <h2>Set by hand,<br>checked <em>twice</em>.</h2>
+        <p>Each stone is seated by an artisan, not a machine. Before dispatch, every piece passes a
+          two-person quality check: plating evenness, clasp strength, stone seating. If it wouldn't
+          survive a wedding season, it doesn't ship.</p>
+        <a class="btn btn--cream" href="shop.html">Shop Hand-Finished Pieces</a>
+      </div>
+      <div class="split__media reveal"><img src="assets/img/artisan.jpg" alt="Artisan hand-setting stones into a gold-tone earring" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="split-head reveal">
+        <h2>Word of <em>mouth</em></h2>
+        <span class="micro">1,400+ verified reviews</span>
+      </div>
+      <div class="testi-grid">
+        <div class="testi reveal">
+          <div class="testi__stars">★★★★★</div>
+          <p>“Wore the Rajwada choker to my sister's sangeet. Three people asked which jeweller it was from. Nobody believed the price.”</p>
+          <footer>Priya M. — Austin, TX</footer>
+        </div>
+        <div class="testi reveal" data-delay="1">
+          <div class="testi__stars">★★★★★</div>
+          <p>“Six months of daily wear on the Zaria hoops — gym, showers I forgot about, everything. Still gold. The anti-tarnish promise is real.”</p>
+          <footer>Ananya S. — Seattle, WA</footer>
+        </div>
+        <div class="testi reveal" data-delay="2">
+          <div class="testi__stars">★★★★★</div>
+          <p>“Ordered Tuesday, wearing it Friday. The packaging alone felt like a gift — checkout took two minutes and now I'm four orders in.”</p>
+          <footer>Farah K. — Miami, FL</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section--cream2">
+    <div class="wrap">
+      <div class="newsletter reveal">
+        <span class="micro micro--gold">The Glow List</span>
+        <h2>10% off your first order</h2>
+        <p>New drops, restocks and styling notes — twice a month, never spam.</p>
+        <form class="news-form" id="news-form" novalidate>
+          <input type="email" id="news-email" placeholder="your@email.com" aria-label="Email address">
+          <button type="submit">Join →</button>
+        </form>
+        <div class="news-msg" id="news-msg"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
